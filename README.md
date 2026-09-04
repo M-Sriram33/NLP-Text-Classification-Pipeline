@@ -1014,7 +1014,8 @@ NLP text classification/
 │   ├── api.py
 │   ├── download_data.py
 │   ├── evaluate.py
-│   └── predict.py
+│   ├── predict.py
+│   └── train.py
 │
 ├── tests/
 │   └── test_model.py
@@ -1031,7 +1032,7 @@ NLP text classification/
 Clone the repository:
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/M-Sriram33/NLP-Text-Classification-Pipeline.git
 ```
 
 Move into the project:
@@ -1061,6 +1062,21 @@ pip install -r requirements.txt
 ---
 
 # 21. Running the Project
+
+## Train the Model
+
+```bash
+python -m src.train
+```
+
+This trains the TF-IDF + Linear SVM pipeline and saves the trained model to:
+
+```text
+models/sentiment_model.joblib
+```
+
+---
+
 
 ## Run Evaluation
 
@@ -1411,6 +1427,7 @@ Automated tests verify that the saved model produces expected sentiment predicti
 [✓] Linear SVM trained
 [✓] Naive Bayes trained
 [✓] Model comparison completed
+[✓] Reproducible training script implemented
 [✓] Final Linear SVM selected
 [✓] Model evaluated
 [✓] Confusion matrix generated
@@ -1422,6 +1439,7 @@ Automated tests verify that the saved model produces expected sentiment predicti
 [✓] Automated tests implemented
 [✓] README documentation completed
 [✓] Git repository initialized
+[✓] GitHub repository published
 ```
 
 ---
@@ -1472,8 +1490,14 @@ Git/GitHub
 
 ---
 
+## GitHub Repository
+
+https://github.com/M-Sriram33/NLP-Text-Classification-Pipeline.git
+
+---
+
 ## Author
 
-**DIMPU**
+**Sriram**
 
 NLP Text Classification Portfolio Project
